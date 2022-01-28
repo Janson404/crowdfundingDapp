@@ -1,0 +1,344 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					},
+					{
+						"name": "goal",
+						"type": "uint256"
+					},
+					{
+						"name": "info",
+						"type": "string"
+					}
+				],
+				"name": "newUse",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "returnMoney",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "getUseLength",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					},
+					{
+						"name": "useID",
+						"type": "uint256"
+					},
+					{
+						"name": "agree",
+						"type": "bool"
+					}
+				],
+				"name": "agreeUse",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "getMyFundings",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					},
+					{
+						"name": "useID",
+						"type": "uint256"
+					}
+				],
+				"name": "checkUse",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "initiator",
+						"type": "address"
+					},
+					{
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"name": "info",
+						"type": "string"
+					},
+					{
+						"name": "goal",
+						"type": "uint256"
+					},
+					{
+						"name": "endTime",
+						"type": "uint256"
+					}
+				],
+				"name": "newFunding",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					}
+				],
+				"name": "contribute",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numFundings",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "fundings",
+				"outputs": [
+					{
+						"name": "initiator",
+						"type": "address"
+					},
+					{
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"name": "info",
+						"type": "string"
+					},
+					{
+						"name": "goal",
+						"type": "uint256"
+					},
+					{
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"name": "numFunders",
+						"type": "uint256"
+					},
+					{
+						"name": "numUses",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "ID",
+						"type": "uint256"
+					},
+					{
+						"name": "useID",
+						"type": "uint256"
+					},
+					{
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "getUse",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"newFunding(address,string,string,uint256,uint256)": {
+					"params": {
+						"endTime": "结束时间",
+						"goal": "目标金额",
+						"info": "项目简介",
+						"initiator": "发起人",
+						"title": "项目标题"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"newFunding(address,string,string,uint256,uint256)": {
+					"notice": "发起众筹项目"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\CrowdFunding.sol": "CrowdFunding"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\CrowdFunding.sol": {
+			"keccak256": "0x6e83c7405cae49a531ff6f6525101f62b215959c97952264197a424536b2dea5",
+			"urls": [
+				"bzzr://b4d7bc2391dd8614c980207c3dadfc39cc5f71f46596d393e6e76ea59f08754e"
+			]
+		}
+	},
+	"version": 1
+}

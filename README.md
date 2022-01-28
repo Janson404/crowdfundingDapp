@@ -1,7 +1,7 @@
 ## 如何运行
 
 1. 首先需要配置好`node`、`npm`、`yarn`，安装`ganache`，`chrome`，`chrome`安装插件`MetaMask`
-2. 安装 truffle，`yarn global add truffle`
+2. 安装 truffle，`npm install -g truffle`
 3. 打开`ganache`软件
 4. 在`ganache`软件上选择 quickstart，单击右上角齿轮图标进行设置
 5. 在 workspace 标签页中 add project 选中 `./truffle-config.js`，server 标签卡将端口改为8545。

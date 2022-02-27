@@ -17,4 +17,12 @@
 15. 浏览器中访问：`http://localhost:8080`
 16. 在`metamask`中选择连接 localhost:7545 的本地网络，并且从 ganache 中导入几个账户进去，就可以开始测试了。
 
+```mermaid
 
+flowchart TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C--D;
+```
+    
